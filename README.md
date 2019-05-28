@@ -56,7 +56,7 @@ git remote add origin 'GITHUB-URL' --> f.eks. "https://github.com/MortenFeldtStu
 git push -u origin master
 
 **12. Travis**<br>
-Aktiver GitHub project i Travis<br>
-Lav "environment-variables" som følgende:<br>
+Aktiver GitHub project i Travis<br><br>
+Lav "environment-variables" som følgende:
 - REMOTE_USER = <br>
 - REMOTE_PW = 
