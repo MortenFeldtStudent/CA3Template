@@ -46,6 +46,11 @@ javax.persistence.schema-generation.database.action=drop-and-create
 javax.persistence.sql-load-script-source=META-INF/testdata.sql
 
 11. Lav GitHub Repository til project
+git init
+git add .
+git commit -m "First Project Commit"
+git remote add origin 'GITHUB-URL' --> f.eks. "https://github.com/MortenFeldtStudent/CA3Template.git"
+git push -u origin master
 
 12. Travis
 - Aktiver GitHub project i Travis
