@@ -1,6 +1,7 @@
 # CA3Template - TILRET:
 
 **1. Rename project:**
+
 Change Display Name --> Project name/path
 Change ArtifactID --> Project name/path
 Rename Folder: --> Project name/path
