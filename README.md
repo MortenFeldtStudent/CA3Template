@@ -57,6 +57,6 @@ git push -u origin master
 
 **12. Travis**<br>
 Aktiver GitHub project i Travis<br><br>
-Lav "environment-variables" som følgende:
-- REMOTE_USER = <br>
-- REMOTE_PW = 
+Lav "environment-variables" som følgende:<br>
+--> REMOTE_USER = <br>
+--> REMOTE_PW = 
