@@ -26,8 +26,8 @@ Linie 34 --> Path på domænenavnet hvor projectet ligger efter upload
 
 **8. OPRET "pu.properties" til local DB:**<br>
 javax.persistence.jdbc.driver=com.mysql.cj.jdbc.Driver<br>
-javax.persistence.jdbc.url=jdbc:mysql://localhost:3306/ca3dev?zeroDateTimeBehavior=convertToNull<br>
-***//!"ca3dev" udskiftes med navnet på ny DB på localhost!***<br>
+javax.persistence.jdbc.url=jdbc:mysql://localhost:3306/ca3template?zeroDateTimeBehavior=convertToNull<br>
+***//!"ca3template" udskiftes med navnet på ny DB på localhost!***<br>
 javax.persistence.jdbc.user=<br>
 javax.persistence.jdbc.password=<br>
 javax.persistence.schema-generation.database.action=drop-and-create<br>
@@ -35,16 +35,16 @@ javax.persistence.sql-load-script-source=META-INF/testdata.sql
 
 **9. OPRET "pu_integration_test.properties" til local DB:**<br>
 javax.persistence.jdbc.driver=com.mysql.cj.jdbc.Driver<br>
-javax.persistence.jdbc.url=jdbc:mysql://localhost:3306/ca3integrationtest?zeroDateTimeBehavior=convertToNull<br>
-***//!"ca3integrationtest" udskiftes med navnet på ny DB på localhost!***<br>
+javax.persistence.jdbc.url=jdbc:mysql://localhost:3306/ca3templateintegrationtest?zeroDateTimeBehavior=convertToNull<br>
+***//!"ca3templateintegrationtest" udskiftes med navnet på ny DB på localhost!***<br>
 javax.persistence.jdbc.user=<br>
 javax.persistence.jdbc.password=<br>
 javax.persistence.schema-generation.database.action=create
 
 **10. Droplet DB "pu_production.properties":**<br>
 javax.persistence.jdbc.driver=com.mysql.cj.jdbc.Driver<br>
-javax.persistence.jdbc.url=jdbc:mysql://localhost:3306/ca3<br> 
-***//!"ca3" udskiftes med navnet på ny DB på droplet!***<br>
+javax.persistence.jdbc.url=jdbc:mysql://localhost:3306/ca3template<br> 
+***//!"ca3template" udskiftes med navnet på ny DB på droplet!***<br>
 javax.persistence.schema-generation.database.action=drop-and-create<br>
 javax.persistence.sql-load-script-source=META-INF/testdata.sql
 
@@ -56,7 +56,7 @@ git remote add origin 'GITHUB-URL' --> f.eks. "https://github.com/MortenFeldtStu
 git push -u origin master
 
 **12. Travis**<br>
-- Aktiver GitHub project i Travis<br>
-- Lav "environment-variables" som følgende:<br>
---> REMOTE_USER = <br>
---> REMOTE_PW = 
+Aktiver GitHub project i Travis<br>
+Lav "environment-variables" som følgende:<br>
+- REMOTE_USER = <br>
+- REMOTE_PW = 
